@@ -1,8 +1,8 @@
 # Planning-and-Learning-in-Robotics
 
-PR1: Making an agent get treasure with lowest cost in a Door & Key Environment by defining the problem as a deterministic shortest path problem (DSP) and using Label Correcting (LC) algorithm .
+PR1: Making an agent get treasure with the lowest cost in a Door & Key Environment by defining the problem as a deterministic shortest path problem (DSP) and using the Label Correcting (LC) algorithm.
 
-PR2: Implementing search-based planning algorithm(RTAA*) in 3D Euclidean space to make an agent elude obstacles and reach a final goal and Comparing RTAA* with RTT* algorithm(using existing library)
+PR2: Implementing a search-based planning algorithm(RTAA*) in 3D Euclidean space to make an agent elude obstacles and reach a final goal and Comparing RTAA* with RTT* algorithm(using an existing library)
 
 PR3: Balancing an inverted pendulum using Value Iteration(VI) and Policy Iteration(PI)
 
@@ -10,7 +10,7 @@ PR4(Group Project): Implementing SARSA, Q-learning and Deep Q-learning in Cart-p
 
 ## PR1: Autonomous navigation in Door&Key Environment
 
-This project implements autonomous navigation in a Door & Key environment to make an agent get treasure with lowest cost using Dynamic Programming algorithm with a known map. There is a key, a door and walls in the map. The agent needs to get the treasure with the lowest cost. The agent has three regular actions - move forward(MF), turn left(TL) and turn right (TR), and two special actions, pick up key(PK) and unlock door(UD).  In this project, I firstly define the problem as a deterministic shortest path problem (DSP) and then use Label Correcting (LC) algorithm to solve the problem.
+This project implements autonomous navigation in a Door & Key environment to make an agent get treasure with the lowest cost using Dynamic Programming algorithm with a known map. There are a key, a door, and walls on the map. The agent needs to get the treasure with the lowest cost. The agent has three regular actions - move forward(MF), turn left(TL) and turn right (TR), and two special actions, pick up the key(PK) and unlock the door(UD). In this project, I define the problem as a deterministic shortest path problem (DSP) and then use the Label Correcting (LC) algorithm to solve the problem.
 
 The Results are demonstrated below:
 
@@ -25,19 +25,13 @@ The Results are demonstrated below:
 | Doorkey-8x8-shortcut | ![8x8_shortcut](./results_demo/PR1_gif/8x8_shortcut.gif) |
 | Doorkey-8x8-example  |      ![example](./results_demo/PR1_gif/example.gif)      |
 
-More analysis for each states please refer to folder:
-
-```
-./results_demo/PR1_results_analysis
-```
-
 
 
 ## PR2: Implementing search-based planning algorithms in 3D Euclidean space, comparing the performance with sampling-based planning algorithms
 
-This project implements search-based and sampling-based planning algorithms in 3D Euclidean space to make an agent elude collision and reach a final goal. RTAA* and RRT* algorithm are chosen to solve this problem and finally the project compares their performance. The RTAA* is implemented by myself and RRT* algorithm is modified based on  **https://github.com/motion-planning/rrt-algorithms**. In this project, I also wrote my own collision checking algorithm to check collision. 
+This project implements search-based and sampling-based planning algorithms in 3D Euclidean space to make an agent elude collision and reach a final goal. RTAA* and RRT* algorithm are chosen to solve this problem and finally, the project compares their performance. The RTAA* is implemented by myself and RRT* algorithm is modified based on  **https://github.com/motion-planning/rrt-algorithms**. In this project, I also wrote my own collision checking algorithm to check collision. 
 
-The results in different maps are demonstrated below:
+The results for different maps are demonstrated below:
 
 | MAP         | RTAA* results                                                | RRT* results                                                 |
 | ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -59,7 +53,7 @@ A 3D rotational verion please refer to
 
 ## PR3: Balancing an inverted pendulum using Value Iteration(VI) and Policy Iteration(PI)
 
-This project implements inverting pendulum using Policy Iteration and Value Iteration. The inverting pendulum problem is formulated as an inifinite-horizon discounted stochastic optimal control problem. Then I compare between PI and VI algorithms by using some visualization. Finally, I play with different paramters to see their impact on performance.
+This project implements inverting pendulum using Policy Iteration and Value Iteration. The inverting pendulum problem is formulated as an infinite-horizon discounted stochastic optimal control problem. Then I compare between PI and VI algorithms by using some visualization. Finally, I play with different parameters to see their impact on performance.
 
 Some results with different parameters are demonstrated below:
 
@@ -75,7 +69,7 @@ Some results with different parameters are demonstrated below:
 
 ## PR4: Reinforcement Learning - implement SARSA, Q-learning and Deep Q-learning
 
-My partner and I implement this project together.  In this project, we implement SARSA, Q-learning and Deep Q-learning to avoid a cart-pole failing down. Also, we implement these three algorithms to guide a lunar lander landing on a desired position. Finally, we compare and evaluation these three algorithms on these different environments.
+My partner and I implement this project together. In this project, we implement SARSA, Q-learning, and Deep Q-learning to avoid a cart-pole failing down. Also, we implement these three algorithms to guide a lunar lander landing on the desired position. Finally, we compare and evaluate these three algorithms in these different environments.
 
 The results are demonstrated below:
 
